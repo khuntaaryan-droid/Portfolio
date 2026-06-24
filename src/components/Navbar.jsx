@@ -66,11 +66,11 @@ function downloadResume() {
           <ul className="mobile-nav-links">
             {navLinks.map((link) => (
               <li key={link.name}>
-                <a 
+                  {link.href ? <a 
                   href={link.href} 
                   className="mobile-nav-link"
                   onClick={() => setIsMobileMenuOpen(false)}
-                >
+                > : <button className=" btn" onClick={link.onclick}>{link.name}</button>}
                   {link.name}
                 </a>
               </li>

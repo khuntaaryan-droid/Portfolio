@@ -1,0 +1,159 @@
+.section-block {
+  margin-bottom: 6rem;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: var(--transition);
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-primary);
+}
+
+.timeline-icon {
+  position: absolute;
+  top: -20px;
+  left: 2rem;
+  background: var(--bg-primary);
+  border: 2px solid var(--accent-primary);
+  color: var(--accent-primary);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-content {
+  margin-top: 1rem;
+}
+
+.timeline-header h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.timeline-company {
+  color: var(--accent-secondary);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.timeline-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-tertiary);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-points {
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.timeline-points li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+
+/* Projects Styles */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  padding: 2.5rem;
+  border-radius: 1rem;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-secondary);
+  box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.2);
+}
+
+.project-folder {
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+}
+
+.project-header h3 {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.project-role {
+  color: var(--text-tertiary);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.project-desc {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.project-points {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.project-points li {
+  display: flex;
+  gap: 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.check-icon {
+  color: var(--accent-secondary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-tag {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.project-card:hover .tech-tag {
+  border-color: var(--accent-primary);
+  color: white;
+}

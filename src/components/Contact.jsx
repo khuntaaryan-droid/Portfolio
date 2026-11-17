@@ -48,8 +48,8 @@ const Contact = () => {
           <div className="contact-info glass">
             <h3>Let's talk about everything!</h3>
             <p className="contact-desc">
-              I'm currently seeking an AI/ML or Python Developer Internship to apply my technical skills 
-              and contribute to real-world software solutions. Feel free to reach out.
+              I'm a Python Developer experienced in Django, REST APIs, and backend development. 
+              Open to full-time opportunities, collaborations, and projects. Feel free to reach out!
             </p>
             
             <div className="contact-details">

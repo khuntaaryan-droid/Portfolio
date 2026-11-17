@@ -11,13 +11,12 @@ const About = () => {
         <div className="about-content">
           <div className="about-text glass">
             <p>
-              I am a motivated BCA graduate with a strong foundation in Full Stack Development and Database Management Systems.
-              My passion lies in Artificial Intelligence, Machine Learning, and backend development. 
-              I strive to build scalable software systems that solve real-world problems.
+              I am a Python Developer with experience in Python, Django, Django REST Framework, SQL, and backend development. 
+              Skilled in developing and maintaining web applications, working with REST APIs, database management, and software systems.
             </p>
             <p>
-              Having worked on projects like an online selling platform for farmers and a Django-based bike rental system, 
-              I've gained practical experience translating complex requirements into efficient code.
+              Experienced in Python development through professional work, internships, and projects. Currently working as a Vibe Developer 
+              at Leotude Lifestyle Private Limited, building REST APIs and managing database operations for HRMS software and application functionality.
             </p>
           </div>
 
@@ -27,9 +26,9 @@ const About = () => {
                 <GraduationCap size={24} />
               </div>
               <div className="edu-details">
-                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <h3>Bachelor of Computer Application (BCA)</h3>
                 <p className="edu-school">Dr. Subhash University, Junagadh</p>
-                <p className="edu-date">July 2023 - April 2026</p>
+                <p className="edu-date">June 2023 – Mar 2026 • CGPA: 8.48</p>
               </div>
             </div>
             
@@ -38,9 +37,9 @@ const About = () => {
                 <BookOpen size={24} />
               </div>
               <div className="edu-details">
-                <h3>Relevant Coursework</h3>
+                <h3>Core Focus & Expertise</h3>
                 <p className="edu-courses">
-                  Data Structures & Algorithms, Software Engineering, Web Technologies, DBMS.
+                  Python, Django, Django REST Framework, SQL Database Management, and OOP Concepts.
                 </p>
               </div>
             </div>

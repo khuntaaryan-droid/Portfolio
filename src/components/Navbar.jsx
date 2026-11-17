@@ -24,15 +24,15 @@ const Navbar = () => {
     { name: 'Resume', onclick: downloadResume },
   ];
 
-function downloadResume() {
-  const resumeUrl = '/Aryan-cv.pdf';
-  const link = document.createElement('a');
-  link.href = resumeUrl;
-  link.download = 'Aryan_Khunt_Resume.pdf';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
+  function downloadResume() {
+    const resumeUrl = '/Aryan-cv.pdf';
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Aryan_Khunt_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
 
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled glass' : ''}`}>
@@ -46,7 +46,11 @@ function downloadResume() {
         <ul className="nav-links desktop-nav">
           {navLinks.map((link) => (
             <li key={link.name}>
-              {link.href ? <a href={link.href} className="nav-link">{link.name}</a> : <button className=" btn" onClick={link.onclick}>{link.name}</button>}
+              {link.href ? (
+                <a href={link.href} className="nav-link">{link.name}</a>
+              ) : (
+                <button className="btn" onClick={link.onclick}>{link.name}</button>
+              )}
             </li>
           ))}
         </ul>
@@ -66,15 +70,26 @@ function downloadResume() {
           <ul className="mobile-nav-links">
             {navLinks.map((link) => (
               <li key={link.name}>
-                  {link.href ? 
-                    <a href={link.href} 
-                      className="mobile-nav-link"
-                      onClick={() => setIsMobileMenuOpen(false)} > 
-                       {link.name}
-                    </a>
-                      : 
-                      <button className=" btn" onClick={link.onclick}>{link.name}</button>
-                    }
+                {link.href ? (
+                  <a 
+                    href={link.href} 
+                    className="mobile-nav-link"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.name}
+                  </a>
+                ) : (
+                  <button 
+                    className="mobile-nav-link btn"
+                    style={{ width: '100%', textAlign: 'left', background: 'none', border: 'none', cursor: 'pointer' }}
+                    onClick={() => {
+                      if (link.onclick) link.onclick();
+                      setIsMobileMenuOpen(false);
+                    }}
+                  >
+                    {link.name}
+                  </button>
+                )}
               </li>
             ))}
           </ul>

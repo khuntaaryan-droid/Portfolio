@@ -1,33 +1,28 @@
 import React from 'react';
-import { Code, Database, Layout, Terminal, Brain } from 'lucide-react';
+import { Code, Database, Layout, Terminal } from 'lucide-react';
 import './Skills.css';
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Programming",
+      title: "Backend Development",
       icon: <Code size={24} />,
-      skills: ["Python", "JavaScript (Basic)", "Object-Oriented Programming (OOP)"]
-    },
-    {
-      title: "Data & AI",
-      icon: <Brain size={24} />,
-      skills: ["NumPy", "Pandas", "Scikit-Learn", "Machine Learning Basics", "Artificial Intelligence"]
-    },
-    {
-      title: "Web Development",
-      icon: <Layout size={24} />,
-      skills: ["Django", "HTML5", "CSS3", "REST APIs"]
+      skills: ["Python", "Django", "Django REST Framework", "REST API", "OOP Concepts"]
     },
     {
       title: "Database Management",
       icon: <Database size={24} />,
-      skills: ["SQL", "Relational Databases", "Data Integration"]
+      skills: ["SQL", "Database Operations", "Data Management", "Migration"]
     },
     {
-      title: "Tools & Workflow",
+      title: "Frontend (Basics)",
+      icon: <Layout size={24} />,
+      skills: ["HTML", "CSS", "JavaScript (Basics)"]
+    },
+    {
+      title: "Tools & Environment",
       icon: <Terminal size={24} />,
-      skills: ["Git", "GitHub", "VS Code", "Cursor AI", "GitHub Copilot"]
+      skills: ["Git & GitHub", "VS Code", "GitHub Copilot", "Cursor AI"]
     }
   ];
 

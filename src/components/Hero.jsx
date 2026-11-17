@@ -26,11 +26,11 @@ const Hero = () => {
           <p className="hero-greeting animate-fade-in">Hi, I'm</p>
           <h1 className="heading-primary animate-fade-in delay-100">
             Aryan Khunt <br />
-            <span className="text-gradient">Python/AI Developer</span>
+            <span className="text-gradient">Python Developer</span>
           </h1>
           <p className="hero-description animate-fade-in delay-200">
-            Motivated BCA graduate with hands-on experience in Python, Django, SQL, and web development. 
-            Passionate about Artificial Intelligence, Machine Learning, and building real-world software solutions.
+            Python Developer with experience in Python, Django, Django REST Framework, SQL, and backend development. 
+            Skilled in developing and maintaining web applications, building REST APIs, and database management.
           </p>
           
           <div className="hero-cta animate-fade-in delay-300">

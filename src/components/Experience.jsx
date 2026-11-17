@@ -3,26 +3,61 @@ import { Briefcase, FolderGit2, Calendar, CheckCircle2 } from 'lucide-react';
 import './Experience.css';
 
 const Experience = () => {
+  const experiences = [
+    {
+      role: "Vibe Developer",
+      company: "Leotude Lifestyle Private Limited",
+      date: "Sep 2026 – Present",
+      points: [
+        "Working with Python and Django for backend development and software application management.",
+        "Developing and maintaining REST APIs using Django REST Framework.",
+        "Working with SQL databases, database operations, data management, and migration.",
+        "Handling application debugging, software maintenance, and system improvements.",
+        "Working on HRMS software management and application functionality."
+      ]
+    },
+    {
+      role: "Python Developer Intern",
+      company: "Satvarth Solutions",
+      date: "Nov 2025 – Dec 2025",
+      points: [
+        "Completed 120-hour internship in Python and Django.",
+        "Gained hands-on experience in OOP concepts and web development.",
+        "Worked on real-time projects and assignments."
+      ]
+    },
+    {
+      role: "AI/ML Intern",
+      company: "Edunet Foundation",
+      date: "Feb 2025",
+      points: [
+        "Completed foundational training and practical assignments in Artificial Intelligence and Machine Learning concepts."
+      ]
+    }
+  ];
+
   const projects = [
     {
       title: "Bike Rental System (Final Year Project)",
-      role: "Full Stack Developer",
-      description: "A comprehensive web application for bike rentals to improve rental management through automation.",
+      role: "Oct 2025 – Mar 2026",
+      description: "Developed a web-based Bike Rental System to automate the rental process. The system allows users to search, compare, and book bikes online, while dealers manage listings and admins control system operations.",
       points: [
-        "Developed a Django-based web application",
-        "Implemented user registration, authentication, booking management, and admin dashboard",
-        "Integrated database operations using SQL"
+        "Automated bike rental workflow with user search, comparison, and online booking",
+        "Empowered dealers to manage bike listings and availability",
+        "Provided comprehensive admin controls for monitoring and system management"
       ],
-      tech: ["Django", "Python", "SQL"]
+      tech: ["Python", "Django", "Django REST Framework", "SQL"]
     },
     {
-      title: "Agri Shop – Farmer Online Selling App",
-      role: "Developer",
-      description: "A platform connecting farmers directly with customers to enhance transparency and efficiency in agricultural trading.",
+      title: "Agri Shop – Farmer Online Selling Application",
+      role: "Project",
+      description: "Developed an Agri Shop web application connecting farmers directly with customers. Implemented product listing, inventory management, online ordering, and admin management features to improve transparency and efficiency in agricultural trading.",
       points: [
-        "Built product listing, inventory management, and online ordering modules"
+        "Direct farmer-to-customer connection improving trading efficiency",
+        "Product listing, inventory control, and real-time online ordering",
+        "Robust admin management system for platform oversight"
       ],
-      tech: ["Python", "Web Technologies"]
+      tech: ["Python", "Django", "SQL", "Web Technologies"]
     }
   ];
 
@@ -32,29 +67,30 @@ const Experience = () => {
         
         {/* Experience Section */}
         <div className="section-block">
-          <h2 className="heading-secondary">Internship <span className="text-gradient">Experience</span></h2>
+          <h2 className="heading-secondary">Professional <span className="text-gradient">Experience</span></h2>
           <div className="timeline">
-            <div className="timeline-item glass">
-              <div className="timeline-icon">
-                <Briefcase size={24} />
-              </div>
-              <div className="timeline-content">
-                <div className="timeline-header">
-                  <h3>Python & Django Web Development Intern</h3>
-                  <span className="timeline-company">Satvarth Solutions</span>
-                  <div className="timeline-date">
-                    <Calendar size={16} />
-                    <span>Nov 2025 – Dec 2025</span>
-                  </div>
+            {experiences.map((exp, index) => (
+              <div key={index} className="timeline-item glass">
+                <div className="timeline-icon">
+                  <Briefcase size={24} />
                 </div>
-                <ul className="timeline-points">
-                  <li>Completed a 120-hour internship focused on Python and Django development.</li>
-                  <li>Worked on real-world web application assignments.</li>
-                  <li>Applied Object-Oriented Programming concepts in project development.</li>
-                  <li>Gained practical exposure to backend development and database integration.</li>
-                </ul>
+                <div className="timeline-content">
+                  <div className="timeline-header">
+                    <h3>{exp.role}</h3>
+                    <span className="timeline-company">{exp.company}</span>
+                    <div className="timeline-date">
+                      <Calendar size={16} />
+                      <span>{exp.date}</span>
+                    </div>
+                  </div>
+                  <ul className="timeline-points">
+                    {exp.points.map((point, idx) => (
+                      <li key={idx}>{point}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
 

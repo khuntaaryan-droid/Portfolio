@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-brand">
             <span className="logo-text">Aryan<span className="text-gradient">Khunt</span></span>
-            <p className="footer-desc">Building intelligent solutions with Python & AI.</p>
+            <p className="footer-desc">Building robust and scalable web applications with Python & Django.</p>
           </div>
           
           <div className="footer-socials">

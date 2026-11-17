@@ -60,18 +60,18 @@ body {
 }
 
 .heading-secondary {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.85rem, 4vw, 2.75rem);
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
 }
 
 .section-padding {
-  padding: 6rem 2rem;
+  padding: 3rem 1.25rem;
 }
 @media (min-width: 768px) {
   .section-padding {
-    padding: 8rem 4rem;
+    padding: 4.5rem 2rem;
   }
 }
 

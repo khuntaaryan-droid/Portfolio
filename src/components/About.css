@@ -1,7 +1,7 @@
 .about-content {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1.75rem;
 }
 
 @media (min-width: 992px) {
@@ -11,38 +11,39 @@
 }
 
 .about-text {
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  font-size: 1.1rem;
+  gap: 1.25rem;
+  font-size: 1.05rem;
   color: var(--text-secondary);
+  line-height: 1.65;
 }
 
 .education-cards {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .edu-card {
-  padding: 2rem;
+  padding: 1.75rem;
   border-radius: 1rem;
   display: flex;
-  gap: 1.5rem;
+  gap: 1.25rem;
   transition: var(--transition);
 }
 
 .edu-card:hover {
-  transform: translateX(10px);
+  transform: translateX(6px);
   border-color: var(--accent-primary);
 }
 
 .edu-icon {
   color: var(--accent-secondary);
   background: rgba(59, 130, 246, 0.1);
-  padding: 1rem;
+  padding: 0.85rem;
   border-radius: 0.75rem;
   display: flex;
   align-items: center;
@@ -51,9 +52,9 @@
 }
 
 .edu-details h3 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: var(--text-primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
 }
 
 .edu-school {
@@ -70,4 +71,26 @@
 .edu-courses {
   color: var(--text-tertiary);
   font-size: 0.95rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about-content {
+    gap: 1.25rem;
+  }
+
+  .about-text {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+    gap: 1rem;
+  }
+
+  .edu-card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .edu-card:hover {
+    transform: none;
+  }
 }

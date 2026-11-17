@@ -6,31 +6,31 @@
 
 @media (min-width: 992px) {
   .contact-content {
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1.4fr;
   }
 }
 
 .contact-info {
-  padding: 2.5rem;
+  padding: 2.25rem;
   border-radius: 1rem;
 }
 
 .contact-info h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--text-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .contact-desc {
   color: var(--text-secondary);
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
   line-height: 1.6;
 }
 
 .contact-details {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .contact-item {
@@ -42,8 +42,8 @@
 .contact-icon {
   background: rgba(139, 92, 246, 0.1);
   color: var(--accent-primary);
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@
 .contact-label {
   color: var(--text-tertiary);
   font-size: 0.85rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.15rem;
 }
 
 .contact-value {
@@ -68,11 +68,11 @@ a.contact-value:hover {
 }
 
 .contact-form {
-  padding: 2.5rem;
+  padding: 2.25rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .form-group {
@@ -91,10 +91,11 @@ a.contact-value:hover {
 .form-group textarea {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-color);
-  padding: 1rem;
+  padding: 0.85rem 1rem;
   border-radius: 0.5rem;
   color: var(--text-primary);
   font-family: inherit;
+  font-size: 0.95rem;
   transition: var(--transition);
 }
 
@@ -102,12 +103,13 @@ a.contact-value:hover {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--accent-primary);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .submit-btn {
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  padding: 0.85rem;
 }
 
 .submit-btn:disabled {
@@ -135,4 +137,16 @@ a.contact-value:hover {
   background: rgba(239, 68, 68, 0.1);
   color: #f87171;
   border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .contact-content {
+    gap: 1.5rem;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 1.5rem;
+  }
 }
